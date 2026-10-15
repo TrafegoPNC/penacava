@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pé na Cava – Grupo de Promoções</title>
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '3609581765857285');
+  fbq('track', 'PageView');
+</script>
+
+<noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3609581765857285&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+  <meta name="description"
+    content="Entre no grupo gratuito de promoções Pé na Cava e economize em capacete, bota, peças e equipamento de trilha. Ofertas exclusivas pra quem anda de moto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Inter:wght@400;600;700&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" id="faviconcima">
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("button, a").forEach(function(element) {
+        element.addEventListener("click", function() {
+            fbq('track', 'Lead');
+        });
+    });
+});
+</script>
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --orange: #FF6B00;
+      --orange-light: #FF8C2A;
+      --black: #0D0D0D;
+      --dark: #1A1A1A;
+      --mud: #3B2A1A;
+      --earth: #5C3A1E;
+      --dirt: #7A5230;
+      --cream: #F5F0E8;
+      --white: #FFFFFF;
+      --gold: #FFD700;
+      --red: #CC1111;
+      --green: #25D366;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--cream);
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      padding: 2rem 1rem 6rem;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(13, 13, 13, 0.4) 0%, rgba(26, 18, 0, 0.6) 60%, #0D0D0D 100%),
+        url('motocros.jpeg') center/cover no-repeat;
+      z-index: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 0.6;
+      }
+
+      90% {
+        opacity: 0.3;
+      }
+
+      100% {
+        transform: translateY(-20px) rotate(720deg);
+        opacity: 0;
+      }
+    }
+
+    .hero-logo {
+      position: relative;
+      z-index: 2;
+      width: 280px;
+      border-radius: 50%;
+      margin-bottom: 0px;
+      margin-top: 35px;
+    }
+
+    .hero-badge {
+      position: relative;
+      z-index: 2;
+      margin-top: 1.4rem;
+      background: rgba(37, 211, 102, 0.12);
+      border: 1px solid var(--green);
+      color: var(--green);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      padding: 0.4rem 1.1rem;
+      border-radius: 100px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .hero-title {
+      position: relative;
+      z-index: 2;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.6rem, 9vw, 5.2rem);
+      line-height: 0.95;
+      color: var(--white);
+      letter-spacing: 0.02em;
+      text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.836);
+    }
+
+    .hero-title span {
+      color: var(--orange-light);
+    }
+
+    .hero-tagline {
+      font-family: Arial, Helvetica, sans-serif;
+      position: relative;
+      z-index: 2;
+      margin-top: 0px;
+      max-width: 640px;
+      font-size: clamp(1rem, 2.4vw, 1.2rem);
+      color: rgba(245, 240, 232, 0.85);
+      line-height: 1.6;
+    }
+
+    .hero-tagline strong {
+      color: var(--orange);
+    }
+
+    .hero-cta {
+      position: relative;
+      z-index: 2;
+      margin-top: 2.2rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--green);
+      color: var(--white);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(1.3rem, 3.6vw, 1.7rem);
+      letter-spacing: 0.1em;
+      padding: 1rem 2.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.753);
+      will-change: transform, background-color;
+    }
+
+    .hero-cta:hover {
+      background: #00e654;
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-cta .emoji {
+      font-size: 1.3em;
+    }
+
+    .hero-note {
+      position: relative;
+      z-index: 2;
+      margin-top: 0.8rem;
+      font-size: 0.8rem;
+      color: rgba(245, 240, 232, 0.4);
+    }
+
+    .hero-secondary-link {
+      position: relative;
+      z-index: 2;
+      margin-top: 1.8rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      color: rgba(245, 240, 232, 0.55);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(245, 240, 232, 0.3);
+      padding-bottom: 2px;
+      transition: color 0.2s;
+    }
+
+    .hero-secondary-link:hover {
+      color: var(--orange);
+    }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      opacity: 0.6;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(8px);
+      }
+    }
+
+    .scroll-hint svg {
+      width: 24px;
+    }
+
+    /* ─── MUD DIVIDER ─── */
+    .mud-divider {
+      position: relative;
+      width: 100%;
+      height: 80px;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    .mud-divider svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* ─── SECTION BASE ─── */
+    section {
+      padding: 5rem 1rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-eyebrow {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.3em;
+      color: var(--orange);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .section-eyebrow::before,
+    .section-eyebrow::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--orange);
+      opacity: 0.4;
+    }
+
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      line-height: 0.95;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .section-title .accent {
+      color: var(--orange);
+    }
+
+    .accent {
+      color: var(--orange);
+    }
+
+    .section-lead {
+      max-width: 640px;
+      margin: 1.2rem auto 0;
+      text-align: center;
+      color: rgba(245, 240, 232, 0.7);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.15em;
+      color: var(--black);
+      flex-shrink: 0;
+    }
+
+    .stat-item .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--black);
+      border-radius: 50%;
+    }
+
+    /* ─── GRUPO CTA (main) ─── */
+    .grupo-cta {
+      background: linear-gradient(135deg, #1A0D00 0%, var(--mud) 50%, #1A0D00 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .grupo-cta::before {
+      content: 'ROIA!';
+      position: absolute;
+      right: -2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(8rem, 20vw, 16rem);
+      color: rgba(255, 107, 0, 0.05);
+      letter-spacing: -0.05em;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    .grupo-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .grupo-benefits {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .grupo-benefits li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: rgba(245, 240, 232, 0.85);
+    }
+
+    .grupo-benefits li .icon {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      line-height: 1.3;
+    }
+
+    .grupo-cta-box {
+      background: rgba(0, 0, 0, 0.5);
+      border: 2px solid var(--orange);
+      border-radius: 8px;
+      padding: 2.5rem;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .grupo-cta-box .badge {
+      background: var(--orange);
+      color: var(--black);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      padding: 0.3rem 1rem;
+      border-radius: 100px;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .grupo-cta-box h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .grupo-cta-box h3 br {
+      color: var(--orange);
+    }
+
+    .grupo-cta-box p {
+      color: rgba(245, 240, 232, 0.7);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: var(--green);
+      color: var(--white);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 0.12em;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      width: 100%;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.753);
+      will-change: transform, background-color;
+    }
+
+    .btn-whatsapp:hover {
+      background: #00e654;
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    /* ─── CATEGORIAS ─── */
+    .categorias {
+      background: var(--dark);
+    }
+
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.4rem;
+      margin-top: 3rem;
+    }
+
+    .cat-card {
+      background: var(--black);
+      border: 1px solid rgba(255, 107, 0, 0.18);
+      border-radius: 8px;
+      padding: 1.8rem 1.4rem;
+      text-align: center;
+      transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.4s ease, box-shadow 0.4s ease;
+      will-change: transform;
+    }
+
+    .cat-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--orange);
+      box-shadow: 0 10px 25px rgba(255, 107, 0, 0.15);
+    }
+
+    .cat-icon {
+      font-size: 2.4rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    .cat-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+
+    .cat-desc {
+      font-size: 0.85rem;
+      color: rgba(245, 240, 232, 0.55);
+      line-height: 1.5;
+    }
+
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .step-card {
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    .step-number {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 1.2rem;
+      border-radius: 50%;
+      background: var(--orange);
+      color: var(--black);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: 0.08em;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .step-desc {
+      font-size: 0.9rem;
+      color: rgba(245, 240, 232, 0.6);
+      line-height: 1.6;
+    }
+
+    .como-funciona-cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    /* ─── ANIMATIONS & FLUIDITY ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .delay-100 { transition-delay: 100ms; }
+    .delay-200 { transition-delay: 200ms; }
+    .delay-300 { transition-delay: 300ms; }
+
+    /* ─── DEPOIMENTOS ─── */
+    .depoimentos {
+      background: var(--dark);
+    }
+
+    .dep-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .dep-card {
+      background: var(--black);
+      border-radius: 8px;
+      padding: 1.8rem;
+      border-left: 4px solid var(--orange);
+      position: relative;
+      transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
+      will-change: transform;
+    }
+
+    .dep-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .dep-card::before {
+      content: '"';
+      position: absolute;
+      top: -0.5rem;
+      left: 1.2rem;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 5rem;
+      color: var(--orange);
+      opacity: 0.2;
+      line-height: 1;
+    }
+
+    .dep-stars {
+      color: var(--gold);
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .dep-text {
+      color: rgba(245, 240, 232, 0.8);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+      font-style: italic;
+    }
+
+    .dep-author {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .dep-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--orange), var(--earth));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+
+    .dep-name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--cream);
+    }
+
+    .dep-loc {
+      font-size: 0.78rem;
+      color: rgba(245, 240, 232, 0.4);
+    }
+
+    /* ─── FAQ ─── */
+    .faq {
+      background: var(--black);
+    }
+
+    .faq-list {
+      max-width: 720px;
+      margin: 3rem auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .faq-item {
+      background: var(--dark);
+      border: 1px solid rgba(255, 107, 0, 0.15);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 1.1rem 1.4rem;
+      font-weight: 700;
+      color: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: '+';
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      color: var(--orange);
+      flex-shrink: 0;
+    }
+
+    .faq-item[open] summary::after {
+      content: '–';
+    }
+
+    .faq-item p {
+      padding: 0 1.4rem 1.2rem;
+      color: rgba(245, 240, 232, 0.65);
+      line-height: 1.6;
+      font-size: 0.92rem;
+    }
+
+    /* ─── SOBRE (compacto) ─── */
+    .sobre {
+      background: var(--dark);
+    }
+
+    .sobre-compact {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .sobre-compact p {
+      color: rgba(245, 240, 232, 0.75);
+      line-height: 1.8;
+      font-size: 1.02rem;
+      margin-bottom: 1rem;
+    }
+
+    .sobre-compact p strong {
+      color: var(--orange);
+    }
+
+    /* ─── CONTEÚDO ─── */
+    .conteudo {
+      background: var(--black);
+    }
+
+    .reels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .reel-card {
+      background: var(--dark);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 107, 0, 0.15);
+      transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+      will-change: transform;
+    }
+
+    .reel-card:hover {
+      transform: translateY(-8px) rotate(-1deg) scale(1.02);
+      border-color: var(--orange);
+      box-shadow: 0 15px 45px rgba(255, 107, 0, 0.4);
+    }
+
+    .reel-thumb {
+      aspect-ratio: 9/14;
+      background: linear-gradient(160deg, var(--mud) 0%, #0D0D0D 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .reel-thumb::after {
+      content: '▶';
+      position: absolute;
+      font-size: 3rem;
+      color: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 107, 0, 0.8);
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 5px;
+      line-height: 64px;
+      text-align: center;
+    }
+
+    .reel-emoji {
+      font-size: 3.5rem;
+      opacity: 0.3;
+    }
+
+    .reel-info {
+      padding: 1rem;
+    }
+
+    .reel-tag {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      color: var(--orange);
+      margin-bottom: 0.3rem;
+    }
+
+    .reel-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--cream);
+      line-height: 1.4;
+    }
+
+    .reel-views {
+      font-size: 0.8rem;
+      color: rgba(245, 240, 232, 0.45);
+      margin-top: 0.4rem;
+    }
+
+    .ver-mais-wrap {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+
+    .btn-outline {
+      background-color: var(--green);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--white);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: 0.15em;
+      padding: 1.4rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      will-change: transform, background-color;
+    }
+
+    .btn-outline:hover {
+      background: #00e654;
+      color: var(--black);
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    /* ─── INSTAGRAM ─── */
+    .instagram {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .insta-handle {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      color: var(--orange);
+      letter-spacing: 0.05em;
+      margin: 1rem 0;
+      text-shadow: 0 0 40px rgba(255, 107, 0, 0.5);
+    }
+
+    .insta-sub {
+      color: rgba(245, 240, 232, 0.6);
+      margin-bottom: 2rem;
+    }
+
+    .btn-insta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background-color: var(--green);
+      color: var(--white);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem;
+      letter-spacing: 0.15em;
+      padding: 0.9rem 2.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      box-shadow: 0 6px 30px var(--orange-light);
+      will-change: transform, box-shadow;
+    }
+
+    .btn-insta:hover {
+      background: #00e654;
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 12px 45px var(--orange);
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #080808;
+      border-top: 2px solid rgba(255, 107, 0, 0.2);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      color: var(--orange);
+      letter-spacing: 0.15em;
+    }
+
+    .footer-sub {
+      font-size: 0.8rem;
+      color: rgba(245, 240, 232, 0.3);
+      margin-top: 0.4rem;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-roia {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 0.9rem;
+      color: rgba(255, 107, 0, 0.5);
+      margin-top: 0.8rem;
+    }
+
+    /* ─── STICKY WHATSAPP BUTTON ─── */
+    .sticky-whatsapp {
+      position: fixed;
+      bottom: 1.2rem;
+      right: 1.2rem;
+      z-index: 50;
+      background: var(--green);
+      color: var(--white);
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.8rem;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+      transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+      will-change: transform;
+    }
+
+    .sticky-whatsapp:hover {
+      transform: scale(1.12) rotate(-5deg);
+      box-shadow: 0 8px 32px rgba(37, 211, 102, 0.7);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 768px) {
+      .grupo-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .grupo-cta::before {
+        display: none;
+      }
+
+      .grupo-cta-box {
+        padding: 1.8rem 1.2rem;
+      }
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    .flowcontent {
+      color: rgba(255, 255, 255, 0.295);
+      text-decoration: none;
+    }
+
+    .flowcontent:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+
+    <img src="logosegundaria.png" alt="Logo Pé na Cava Trilhas de Moto" class="hero-logo" fetchpriority="high">
+
+    <h1 class="hero-title"><br><span> AS MELHORES PROMOÇÕES</span></h1>
+
+    <p class="hero-tagline">
+      Entre no grupo e economize em <strong>capacete, bota, luva, peças e equipamento de trilha</strong>. Ofertas
+      relâmpago selecionadas pra quem anda de moto.
+      <strong>@penacavaoffroad</strong>
+    </p>
+
+    <a href="https://chat.whatsapp.com/BRit7gJVkdw4RIljwb12ak" target="_blank" class="hero-cta">
+      ENTRAR NO GRUPO AGORA
+    </a>
+
+    <div class="scroll-hint">
+    </div>
+  </section>
+
+  <!-- MUD DIVIDER -->
+  <div class="mud-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M0,40 C80,10 160,60 240,35 C320,10 400,55 480,40 C560,25 640,60 720,38 C800,16 880,52 960,35 C1040,18 1120,55 1200,38 C1280,21 1360,50 1440,35 L1440,80 L0,80 Z"
+        fill="#1A1A1A" />
+      <path
+        d="M0,55 C100,30 200,65 300,48 C400,31 500,62 600,50 C700,38 800,60 900,45 C1000,30 1100,58 1200,44 C1300,30 1380,55 1440,48 L1440,80 L0,80 Z"
+        fill="#1A1A1A" opacity="0.7" />
+    </svg>
+  </div>
+
+  <!-- GRUPO CTA / BENEFÍCIOS -->
+  <section class="grupo-cta" id="grupo">
+    <div class="container">
+      <div class="grupo-inner reveal">
+        <div>
+          <div class="section-eyebrow">Grupo Exclusivo</div>
+          <h2 class="section-title" style="text-align:left;">POR QUE<br>ENTRAR NO<br><span class="accent">GRUPO?</span>
+          </h2>
+          <ul class="grupo-benefits">
+            <li><span class="icon"></span><span>As melhores promoções para quem vive sobre duas rodas. Receba ofertas,
+                cupons e descontos exclusivos em peças, acessórios e equipamentos, tudo em um só lugar e atualizado
+                diariamente.</span></li>
+
+            <li><span class="icon"></span><span>Economize em cada compra da sua moto. Entre no grupo e tenha acesso a
+                ofertas em tempo real, links das melhores lojas e promoções que realmente valem a pena.</span></li>
+          </ul>
+        </div>
+
+        <div class="grupo-cta-box">
+          <h3>PÉ NA CAVA<br><span class="accent">PROMOÇÕES</span></h3>
+          <p>Já somos mais de <strong>5 mil trilheiros</strong> no grupo. Chega de pagar caro em equipamento!</p>
+          <a href="https://chat.whatsapp.com/BRit7gJVkdw4RIljwb12ak" target="_blank" class="btn-whatsapp">
+            QUERO ENTRAR AGORA
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUD DIVIDER 2 -->
+  <div class="mud-divider" style="background:#1A0D00;">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M0,35 C120,60 240,20 360,45 C480,70 600,25 720,42 C840,59 960,22 1080,40 C1200,58 1320,28 1440,45 L1440,80 L0,80 Z"
+        fill="#1A1A1A" />
+    </svg>
+  </div>
+
+  <!-- CATEGORIAS DE PROMOÇÕES -->
+  <section class="categorias">
+    <div class="container">
+      <div class="section-eyebrow">O que rola no grupo</div>
+      <h2 class="section-title">CATEGORIAS DE<br><span class="accent">PROMOÇÃO</span></h2>
+      <p class="section-lead">Reunimos as melhores ofertas, dicas e oportunidades para quem vive o universo das motos e
+        das trilhas.</p>
+
+      <div class="cat-grid">
+        <div class="cat-card reveal">
+          <span class="cat-icon"><img src="airoh2.png" alt="" loading="lazy" decoding="async"></span>
+          <div class="cat-name">CAPACETES</div>
+          <div class="cat-desc">Off-road, cross e urbanos com desconto</div>
+        </div>
+        <div class="cat-card reveal delay-100">
+          <span class="cat-icon"><img src="alpinestars2.png" alt="" loading="lazy" decoding="async"></span>
+          <div class="cat-name">BOTAS E LUVAS</div>
+          <div class="cat-desc">Proteção pra trilha com preço de campeão</div>
+        </div>
+        <div class="cat-card reveal delay-200">
+          <span class="cat-icon"><img src="circuit.png" alt="" loading="lazy" decoding="async"></span>
+          <div class="cat-name">PEÇAS E ACESSÓRIOS</div>
+          <div class="cat-desc">Pneus, correntes, guidão e muito mais</div>
+        </div>
+        <div class="cat-card reveal delay-300">
+          <span class="cat-icon"><img src="IMS.png" alt="" loading="lazy" decoding="async"></span>
+          <div class="cat-name">EQUIPAMENTO DE PROTEÇÃO</div>
+          <div class="cat-desc">Cotoveleira, joelheira, colete e peito</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUD DIVIDER 4 -->
+  <div class="mud-divider" style="background:#0D0D0D;">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,38 C200,62 400,18 600,44 C800,70 1000,24 1200,46 C1320,58 1400,35 1440,42 L1440,80 L0,80 Z"
+        fill="#1A1A1A" />
+    </svg>
+  </div>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos">
+    <div class="container">
+      <div class="section-eyebrow">Relatos da Galera</div>
+      <h2 class="section-title">QUEM ENTROU<br><span class="accent">JÁ ECONOMIZOU</span></h2>
+
+      <div class="dep-grid">
+        <div class="dep-card reveal">
+          <div class="dep-stars">★★★★★</div>
+          <p class="dep-text">"Cara, entrei no grupo semana passada e já economizei numa bota tech 3 que tava na
+            metade do preço."</p>
+          <div class="dep-author">
+            <div class="dep-avatar"><img src="capacete.png" alt="" loading="lazy" decoding="async"></div>
+            <div>
+              <div class="dep-name">Kauã F. </div>
+              <div class="dep-loc">Honda CRF 230F</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dep-card reveal delay-100">
+          <div class="dep-stars">★★★★★</div>
+          <p class="dep-text">"Peguei um óculos da 100% com um descontão e ainda economizei no frete. Recomendo demais o
+            grupo."</p>
+          <div class="dep-author">
+            <div class="dep-avatar"><img src="capacete.png" alt="" loading="lazy" decoding="async"></div>
+            <div>
+              <div class="dep-name">Eduardo R.</div>
+              <div class="dep-loc">Honda CRF 250F</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dep-card reveal delay-200">
+          <div class="dep-stars">★★★★★</div>
+          <p class="dep-text">"Consegui comprar um kit de relação com quase 40% de desconto. Chegou tudo certinho."</p>
+          <div class="dep-author">
+            <div class="dep-avatar"><img src="capacete.png" alt="" loading="lazy" decoding="async"></div>
+            <div>
+              <div class="dep-name">Marcelo R.</div>
+              <div class="dep-loc">KTM 350 EXC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUD DIVIDER 5 -->
+  <div class="mud-divider" style="background:#1A1A1A;">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M0,35 C120,60 240,20 360,45 C480,70 600,25 720,42 C840,59 960,22 1080,40 C1200,58 1320,28 1440,45 L1440,80 L0,80 Z"
+        fill="#0D0D0D" />
+    </svg>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-eyebrow">Dúvidas Rápidas</div>
+      <h2 class="section-title">PERGUNTAS<br><span class="accent">FREQUENTES</span></h2>
+
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>O grupo é mesmo gratuito?</summary>
+          <p>Sim! Entrar e receber as promoções no grupo do WhatsApp é 100% gratuito, sempre.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Que tipo de promoção chega no grupo?</summary>
+          <p>Ofertas de capacete, bota, luva, peças, acessórios, equipamento de proteção e itens de manutenção pra quem
+            anda de moto e trilha.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Preciso andar de moto pra participar?</summary>
+          <p>Não é obrigatório, mas o grupo é feito pra quem gosta do universo das motos e trilhas — a galera troca
+            dica, indica trilha e compartilha as melhores ofertas.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Vou receber muitas mensagens?</summary>
+          <p>Só o essencial: promoções relevantes e conteúdo da comunidade. Sem spam.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUD DIVIDER 6 -->
+  <div class="mud-divider" style="background:#1A1A1A;">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,45 C180,20 360,65 540,40 C720,15 900,60 1080,38 C1260,16 1380,52 1440,40 L1440,80 L0,80 Z"
+        fill="#1A1A1A" />
+    </svg>
+  </div>
+
+  <!-- SOBRE (compacto) -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="section-eyebrow">Quem é Pé na Cava</div>
+      <h2 class="section-title">DA <span class="accent">LAMA</span> AO<br>INSTAGRAM</h2>
+
+      <div class="sobre-compact">
+        <p>O Pé na Cava nasceu da vontade de registrar nossos <strong>rolês, trilhas e as zoeiras</strong> de fim de
+          semana com a galera. O que começou como diversão acabou virando uma comunidade apaixonada pelo mundo off-road.
+        </p>
+        <p>Com o tempo, decidimos compartilhar também nosso conhecimento sobre peças, equipamentos e acessórios. Hoje,
+          além da lama, ajudamos a galera a encontrar <strong>as melhores promoções e economizar de verdade.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO -->
+  <section class="conteudo" id="conteudo">
+    <div class="container">
+      <div class="section-eyebrow">Conteúdo</div>
+      <h2 class="section-title">TAMBÉM TEM<br><span class="accent">TRILHA E ZOEIRA</span></h2>
+
+      <div class="reels-grid">
+        <div class="reel-card reveal">
+          <div class="reel-thumb">
+            <a href="https://www.instagram.com/reel/DaVwiaupaHI/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="imagem1.png" alt="" loading="lazy" decoding="async"></a>
+          </div>
+          <div class="reel-info">
+            <div class="reel-tag"> Trilha épica</div>
+            <div class="reel-title">Trilha na chuva: quem aguentou até o fim?</div>
+            <div class="reel-views">1.500 visualizações</div>
+          </div>
+        </div>
+        <div class="reel-card reveal delay-100">
+          <div class="reel-thumb">
+            <a href="https://www.instagram.com/reel/Da_IY6OJZ2l/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="imagepaulao.png" alt="" loading="lazy" decoding="async"></a>
+          </div>
+          <div class="reel-info">
+            <div class="reel-tag"> Ofertas do grupo</div>
+            <div class="reel-title">Ofertas diárias em tudo sobre Off-road.</div>
+            <div class="reel-views">120 visualizações</div>
+          </div>
+        </div>
+        <div class="reel-card reveal delay-200">
+          <div class="reel-thumb">
+            <a href="https://www.instagram.com/reel/Dad8hCXRZoc/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="imagem3.png" alt="" loading="lazy" decoding="async"></a>
+          </div>
+          <div class="reel-info">
+            <div class="reel-tag"> Roia do dia</div>
+            <div class="reel-title">É pressa ou pressão?</div>
+            <div class="reel-views">300 visualizações</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ver-mais-wrap">
+        <a href="https://www.instagram.com/penacavaoffroad?igsh=ZGcyaWMzbTY2Y3lz&utm_source=qr" target="_blank"
+          class="btn-outline">
+          VER TODOS OS VÍDEOS NO INSTAGRAM
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM FINAL -->
+  <section class="instagram">
+    <div class="container">
+      <div class="section-eyebrow">Redes Sociais</div>
+      <div class="insta-handle">@PENACAVAOFFROAD</div>
+      <a href="https://www.instagram.com/penacavaoffroad?igsh=ZGcyaWMzbTY2Y3lz&utm_source=qr" target="_blank"
+        class="btn-insta">
+        <img src="insta.png" alt=""> SEGUIR NO INSTAGRAM
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">PÉ NA CAVA – GRUPO DE PROMOÇÕES</div>
+    <div class="footer-sub">Site desenvolvido por <a href="https://www.instagram.com/flowcontentweb/"
+        class="flowcontent" target="_blank">FlowContet</a></div>
+  </footer>
+
+  <a href="https://chat.whatsapp.com/BRit7gJVkdw4RIljwb12ak" target="_blank" class="sticky-whatsapp"
+    aria-label="Entrar no grupo do WhatsApp">
+    <img src="whatsapp.png" alt="" style="width:32px;">
+  </a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Intersection Observer for Scroll Animations
+      const reveals = document.querySelectorAll(".reveal");
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add("active");
+                  observer.unobserve(entry.target);
+              }
+          });
+      }, { rootMargin: "0px 0px -50px 0px" });
+      
+      reveals.forEach(el => revealObserver.observe(el));
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const target = document.querySelector(a.getAttribute('href'));
+          if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
