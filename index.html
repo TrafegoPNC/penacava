@@ -36,14 +36,42 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" id="faviconcima">
 
   <script>
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll("button, a").forEach(function(element) {
-        element.addEventListener("click", function() {
-            fbq('track', 'Lead');
-        });
+  // Lead: pixel (navegador) + API de Conversões (servidor) com o mesmo event_id,
+  // para a Meta descartar a duplicata. Dispara só nos botões do grupo do WhatsApp.
+  document.addEventListener("DOMContentLoaded", function () {
+    function getCookie(name) {
+      var m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+      return m ? decodeURIComponent(m[1]) : undefined;
+    }
+    function getFbc() {
+      var fbc = getCookie('_fbc');
+      if (fbc) return fbc;
+      var fbclid = new URLSearchParams(location.search).get('fbclid');
+      return fbclid ? 'fb.1.' + Date.now() + '.' + fbclid : undefined;
+    }
+    document.querySelectorAll('a[href*="chat.whatsapp.com"]').forEach(function (link) {
+      link.addEventListener("click", function () {
+        var eventId = 'lead_' + Date.now() + '_' + Math.random().toString(36).slice(2, 10);
+        if (typeof fbq === 'function') {
+          fbq('track', 'Lead', { content_name: 'Entrar no grupo WhatsApp' }, { eventID: eventId });
+        }
+        try {
+          fetch('/api/lead', {
+            method: 'POST',
+            keepalive: true,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              event_id: eventId,
+              event_source_url: location.href,
+              fbp: getCookie('_fbp'),
+              fbc: getFbc()
+            })
+          });
+        } catch (e) {}
+      });
     });
-});
-</script>
+  });
+  </script>
 
   <style>
     *,
